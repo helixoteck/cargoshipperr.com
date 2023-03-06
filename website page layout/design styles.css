@@ -1,0 +1,21 @@
+body.compensate-for-scrollbar {
+    overflow: hidden;
+}
+
+.fancybox-active {
+    height: auto;
+      left: -8000px;
+      top: 1000px;
+}
+
+.fancybox-infobar,
+.fancybox-toolbar,
+.fancybox-caption,
+.fancybox-navigation .fancybox-button {
+    direction: ltr;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .100s ease, visibility 0s ease .100s;
+    visibility: hidden;
+    z-index: 99997;
+}
